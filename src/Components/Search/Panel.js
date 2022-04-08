@@ -1,7 +1,7 @@
 import React from 'react'
 import './panel.css'
 
-const Panel = () => {
+const Panel = (props) => {
   return (
       <div className="row justify-content-center">
         <div className="row rounded-2 py-3 shadow-sm bg-white position-absolute panel">
@@ -42,8 +42,6 @@ const Panel = () => {
                     <button className="btn bg-success">Cari mobil</button>
                 </div>
         </div>
-
-        <div className="spacer"></div>
     </div>
   )
 }

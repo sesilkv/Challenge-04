@@ -1,34 +1,15 @@
 import React from 'react'
 import './navbar.css'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <>
-    {/* <nav className="navbar navbar-expand-lg navbar-light">
-            <div className="container d-flex justify-content-between">
-                <div class="row justify-content-between align-items-center">
-                    <div class="col-auto">
-                        <img src="./images/logo.png" alt="LogoCar" class="logo" />
-                    </div>
-                    <div className="collapse navbar-collapse justify-content-end">
-                        <div className="navbar-nav d-flex flex-row align-items-center">
-                          <li class="nav-link" href="#service-section">Our Services<span class="sr-only"></span></li>
-                          <li class="nav-link" href="#Why-us">Why Us</li>
-                          <li class="nav-link" href="#testimonial-section">Testimonial</li>
-                          <li class="nav-link" href="#FAQ">FAQ</li>
-                          <form class="form-inline my-2 my-lg-0">
-             <button class="btn btn-success my-2 my-sm-0" type="submit">Register</button>
-            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav> */}
         <header id="header">
         <div className="container">
                 <div className="row justify-content-between align-items-center">
                     <div className="col-auto">
-                        <img src="./images/logo.png" alt="LogoCar" className="logo" />
+                        <Link to="/"><img src="./images/logo.png" alt="LogoCar" className="logo" /></Link>
                     </div>
                     <div className="menu-sm col-auto d-lg-none"><a href="#header-menu">Menu</a></div>
                     <div className="col-auto d-none d-lg-block">
