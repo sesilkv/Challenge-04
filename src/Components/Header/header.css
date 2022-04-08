@@ -1,0 +1,38 @@
+#home {
+    background-color: #F1F3FF;
+  }
+  
+  #home .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  #home .container .home-desc {
+    padding-top: auto;
+  }
+  
+  #home .container .home-desc h1 {
+    font-weight: bold;
+  }
+  
+  @media (max-width: 950px) {
+    #home .container .home-desc h1 {
+      font-size: 30px;
+      margin-top: 20px;
+    }
+  }
+  
+  #home .container .home-desc p {
+    font-size: 15px;
+    margin-top: 25px;
+  }
+  
+  #home .container .home-desc .sewa {
+    padding: 10px 25px;
+    color: white;
+  }
+
+  #home .container .home-image {
+    width: 125%;
+  }
