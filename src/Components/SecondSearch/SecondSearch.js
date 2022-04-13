@@ -1,9 +1,9 @@
 import React from 'react'
-import './panel.css'
+import "./secondsearch.css"
 
-const Panel = () => {
+const SecondSearch = () => {
   return (
-      <div className="row justify-content-center">
+    <div className="row justify-content-center">
         <div className="row rounded-2 py-3 shadow-sm bg-white position-absolute panel">
             {/* <h6 className="fw-bold px-4">{!props.cari ? "Pencarianmu" : ""}</h6> */}
             <div className="d-flex col-11 col-12">
@@ -39,11 +39,11 @@ const Panel = () => {
                 
             </div>
             <div className="cari col-1 px-0">
-                    <button className="btn bg-success">Cari mobil</button>
+                    <button className="btn bg-success">Edit</button>
                 </div>
         </div>
     </div>
   )
 }
 
-export default Panel
+export default SecondSearch

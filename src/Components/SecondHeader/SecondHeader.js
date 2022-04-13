@@ -1,8 +1,9 @@
 import React from 'react'
+import "./secondheader.css"
 
 const SecondHeader = () => {
   return (
-    <div className="bg-light" style={{height:`100px`}}>
+    <div className='second'>
     </div>
   )
 }
