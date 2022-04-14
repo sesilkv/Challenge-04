@@ -1,5 +1,6 @@
 import React from 'react'
 import './panel.css'
+import { Link } from 'react-router-dom'
 
 const Panel = () => {
   return (
@@ -36,11 +37,10 @@ const Panel = () => {
                         <input type="number" className="form-control" />
                     </div>
                 </div>
-                
             </div>
-            <div className="cari col-1 px-0">
-                    <button className="btn bg-success">Cari mobil</button>
-                </div>
+            <Link to={`/cari`} className="submit">
+                <button type='submit'>Cari Mobil</button>
+            </Link>
         </div>
     </div>
   )

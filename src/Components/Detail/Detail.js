@@ -1,26 +1,25 @@
 import React, {useState, useEffect} from 'react'
-import { Link } from "react-router-dom";
-import { useParams } from 'react-router';
-import { BsPeople } from 'react-icons/bs';
-import { FiSettings } from 'react-icons/fi';
-import { FaRegCalendar } from 'react-icons/fa';
+import { Link } from "react-router-dom"
+import { useParams } from 'react-router'
+import { BsPeople } from 'react-icons/bs'
+import { FiSettings } from 'react-icons/fi'
+import { FaRegCalendar } from 'react-icons/fa'
 
 const Detail = () => {
-    const { id } = useParams();
-
-    let [item, setItem] = useState([]);
+    const { id } = useParams()
+    let [item, setItem] = useState([])
     
-    const datas = async () => {
-        let fetchs = await fetch('https://rent-cars-api.herokuapp.com/customer/car/' + id)
-        let datas = await fetchs.json();
-        setItem(item=datas)
-     }
-  
-    useEffect(() => {
-  
-      datas();
-      
-    },[]);
+    const data = async () => {
+      let fetchs = await fetch('https://rent-cars-api.herokuapp.com/customer/car/' + id)
+      let data = await fetchs.json();
+      setItem(item=data)
+   }
+
+  useEffect(() => {
+
+    data();
+    
+  },[]);
 
   return (
     <div className="container w-80 mb-5" style={{paddingTop: `200px`}}>
